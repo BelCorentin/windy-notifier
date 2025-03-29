@@ -104,14 +104,29 @@ def send_notification(wind_speed, wind_gust=None):
         notification_sent = send_telegram_notification(wind_speed, wind_gust, threshold)
     
     elif NOTIFICATION_METHOD == "email":
-        # Only use email
-        logger.info("Using email for notification")
-        notification_sent = send_email_notification(wind_speed, wind_gust, threshold)
+        # Use the simple SMTP notifier
+        try:
+            # Import simple SMTP notifier
+            from windy_notifier.notifiers.simple_smtp_notifier import send_simple_smtp_notification
+            logger.info("Using simple SMTP notification")
+            notification_sent = send_simple_smtp_notification(wind_speed, wind_gust, threshold)
+        except ImportError:
+            # Fall back to regular email if simple SMTP is not available
+            logger.info("Simple SMTP notifier not available, using standard email notification")
+            notification_sent = send_email_notification(wind_speed, wind_gust, threshold)
     
     elif NOTIFICATION_METHOD == "both":
         # Try both methods
         logger.info("Using both email and Telegram for notification")
-        email_success = send_email_notification(wind_speed, wind_gust, threshold)
+        
+        # Try simple SMTP first
+        try:
+            from windy_notifier.notifiers.simple_smtp_notifier import send_simple_smtp_notification
+            email_success = send_simple_smtp_notification(wind_speed, wind_gust, threshold)
+        except ImportError:
+            # Fall back to regular email
+            email_success = send_email_notification(wind_speed, wind_gust, threshold)
+            
         telegram_success = send_telegram_notification(wind_speed, wind_gust, threshold)
         notification_sent = email_success or telegram_success
     

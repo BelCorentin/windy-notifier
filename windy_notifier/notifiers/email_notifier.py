@@ -232,6 +232,12 @@ class EmailNotifier:
         """
         if not self.is_configured:
             logger.error("Email configuration is incomplete, notification not sent")
+            logger.error(f"SMTP Server: {self.smtp_server}")
+            logger.error(f"SMTP Port: {self.smtp_port}")
+            logger.error(f"SMTP Username: {'✓ Set' if self.smtp_username else '✗ Missing'}")
+            logger.error(f"SMTP Password: {'✓ Set' if self.smtp_password else '✗ Missing'}")
+            logger.error(f"Sender Email: {self.sender_email}")
+            logger.error(f"Recipients: {', '.join(self.recipients) if self.recipients else '✗ Missing'}")
             return False
         
         subject = f"High Wind Alert: {format_wind_speed(wind_speed)}"
@@ -252,13 +258,18 @@ class EmailNotifier:
         
         success = True
         try:
+            logger.info(f"Connecting to SMTP server {self.smtp_server}:{self.smtp_port}...")
             with smtplib.SMTP(self.smtp_server, self.smtp_port) as server:
+                logger.info("Connected to SMTP server, starting TLS...")
                 server.starttls()
+                logger.info(f"TLS started, attempting to login with username: {self.smtp_username}...")
                 server.login(self.smtp_username, self.smtp_password)
+                logger.info("Login successful!")
                 
                 # Send to all recipients
                 for recipient in self.recipients:
                     try:
+                        logger.info(f"Sending email to {recipient}...")
                         message["To"] = recipient
                         server.sendmail(self.sender_email, recipient, message.as_string())
                         logger.info(f"Email notification sent to {recipient}")
@@ -270,6 +281,10 @@ class EmailNotifier:
         
         except Exception as e:
             logger.error(f"Failed to send email notifications: {e}")
+            if "authentication" in str(e).lower():
+                logger.error("This appears to be an authentication issue. Please check your SMTP username and password.")
+                logger.error("For Gmail, make sure you're using an App Password if 2FA is enabled.")
+                logger.error("For ProtonMail, ensure you're using the Bridge password and Bridge is running.")
             return False
 
 
@@ -300,7 +315,25 @@ def test_email_notification():
     notifier = EmailNotifier()
     if not notifier.is_valid():
         print("❌ Email configuration is incomplete")
-        print("Please check your .env file for email settings")
+        print("Please check your .env file for email settings:")
+        print(f"  - SMTP_SERVER: {notifier.smtp_server or 'Not set'}")
+        print(f"  - SMTP_PORT: {notifier.smtp_port}")
+        print(f"  - SMTP_USERNAME: {'Set' if notifier.smtp_username else 'Not set'}")
+        print(f"  - SMTP_PASSWORD: {'Set' if notifier.smtp_password else 'Not set'}")
+        print(f"  - SENDER_EMAIL: {notifier.sender_email or 'Not set'}")
+        print(f"  - RECIPIENT_EMAIL: {', '.join(notifier.recipients) if notifier.recipients else 'Not set'}")
+        
+        print("\nCommon email issues:")
+        print("1. For Gmail:")
+        print("   - You need to use an App Password if 2FA is enabled")
+        print("   - Enable 'Less secure app access' for older apps")
+        print("2. For ProtonMail:")
+        print("   - You need to use Bridge and the Bridge password")
+        print("   - Make sure Bridge is running")
+        print("3. For all providers:")
+        print("   - Check for typos in email addresses")
+        print("   - Ensure the SMTP port is allowed in your firewall")
+        
         return False
     
     test_wind = 18.5
@@ -308,12 +341,21 @@ def test_email_notification():
     threshold = 15
     
     print(f"Sending test email for wind speed: {test_wind} knots, gust: {test_gust} knots")
+    print(f"Using SMTP server: {notifier.smtp_server}:{notifier.smtp_port}")
+    print(f"Sender email: {notifier.sender_email}")
+    print(f"Recipients: {', '.join(notifier.recipients)}")
+    
     result = notifier.send_notification(test_wind, test_gust, threshold)
     
     if result:
         print("✅ Test email sent successfully!")
     else:
         print("❌ Failed to send test email")
+        print("\nTroubleshooting steps:")
+        print("1. Check your email provider's security settings")
+        print("2. Try using a different email provider (Gmail, Outlook, etc.)")
+        print("3. Verify that your .env file has the correct credentials")
+        print("4. Look at the logs above for specific error messages")
     
     return result
 
