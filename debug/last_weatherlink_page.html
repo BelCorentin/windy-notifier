@@ -1,0 +1,463 @@
+<html lang="en" dir="ltr" langs="en"><head><script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.0/dayjs.min.js" integrity="sha512-KTFpdbCb05CY4l242bLjyaPhoL9vAy4erP1Wkn7Rji0AG6jx6zzGtKkdHc7jUOYOVSmbMbTg728u260CA/Qugg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.0/plugin/timezone.min.js" integrity="sha512-5B0kN+0UECcx7IszahbNmyocfPwR5MNpyggUEgq9nb6Sl5apxs8yl5Q2847Gsa3xXZtsFRVUj7TskUyT+TxXqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.0/plugin/utc.min.js" integrity="sha512-TU4ndEYOqql+pMXn14M8RDWsjjD+VPUA2RoWSuuFd+blPJW4oLrL1w1zAGdlrk4jsE2FEBH5CU3+fmogVYEqIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.0/plugin/advancedFormat.min.js" integrity="sha512-MGC6Za7V8BU0nL3GVjgssHGIZkIMM6A+tcnxqwkdDASdOnyHwmCwyoVfxSYDxiznl4DDYeZP0Jn0p5MW+r4Rnw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.0/plugin/localizedFormat.min.js" integrity="sha512-webaelc41/yR5a3vWQMwU1o6nqNPlwiiF9T4UfUJjGb/+jTHvpd7Xbj1d4IkHTxrjOnrl04W2D6ytruI9NNWhw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.0/plugin/customParseFormat.min.js" integrity="sha512-nbPJ/ANJ1DCwUWGyfS+PY7RMysy5UnFyOzPTjzcphOuVbUqrukQAZ9kkNvTkPmItJRuuL5IqNufQTHPyxxpmig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.1/plugin/duration.min.js" integrity="sha512-QxVJ3lAILV0RSq3wPNV5CFNyyywxd5QfA9jfGfzVViwpL/eWSi5dR1nZMc02c+QE4xz2L1eQvx/fn18RrUq9lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript">
+  dayjs.locale('en');
+  dayjs.extend(dayjs_plugin_utc);
+  dayjs.extend(dayjs_plugin_timezone);
+  dayjs.extend(dayjs_plugin_advancedFormat);
+  dayjs.extend(dayjs_plugin_localizedFormat);
+  dayjs.extend(dayjs_plugin_customParseFormat);
+  dayjs.extend(dayjs_plugin_duration);
+</script>
+
+
+
+    <link type="image/x-icon" href="/static/favicon.ico" rel="Shortcut Icon">
+<link rel="stylesheet" href="/css/10.0.2.7-5e03c50c/embeddablePage.css">
+<link type="text/css" rel="stylesheet" href="/css/10.0.2.7-5e03c50c/jquery-ui.css">
+<link rel="stylesheet" href="/css/10.0.2.7-5e03c50c/bulletin.css">
+<link rel="stylesheet" href="/css/10.0.2.7-5e03c50c/style.css">
+<title>Weather Conditions - Saint-Raphaël - Le Lion de Mer </title>
+<meta charset="UTF-8">
+<meta name="defaultLanguage" content="en">
+<meta name="availableLanguages" content="en, pt, pl, it, fr, fr-fr, fr-FR, ru, es, de, cn, ja">
+<link rel="localization" href="/static/local/{locale}.json">
+</head>
+<body class="embeddable-page-body">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLLVC3L"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+<div class="embeddable-page-container"><div><div class="embeddable-page embeddable-page-summary">
+    <div class="embeddable-page-header clearfix">
+        <div class="embeddable-page-header-text">
+            Saint-Raphaël - Le Lion de Mer
+        </div>
+        <span class="conditions" id="conditionsUpdated" data-bs-toggle="tooltip" title="Last successful refresh at 15:02 Mar 29, 2025">
+        Conditions as of: 15:00 Saturday, Mar 29, 2025
+        </span>
+    </div>
+    <div class="row-margin embeddable-page-summary-body">
+        <div id="currentCond"><div>
+<table>
+    <tbody>
+    <tr class="section-header-tr">
+        <td class="col-3">
+            
+                <span data-l10n-id="weather_station">Weather Station</span>
+            
+        </td>
+        
+        <td class="col-2" data-l10n-id="Current">Current</td>
+        <td class="col-2" data-l10n-id="daily_highs">Daily Highs</td>
+        <td class="col-2" data-l10n-id="daily_lows">Daily Lows</td>
+        
+    </tr>
+    
+    </tbody>
+</table>
+<div class="summary-block" style="display:  block ">
+    <table>
+        <tbody>
+        
+        <tr class="spacer"></tr>
+        <tr class="data-row">
+            <td class="col-3" data-l10n-id="sensor_temp">Temperature</td>
+            <td class="col-2">
+                14,7 °C
+            </td>
+            <td class="col-2">
+                15,8 °C
+                 | 11:48
+            </td>
+            <td class="col-2">
+                10,7 °C
+                 | 06:33
+            </td>
+        </tr>
+        
+        
+        <tr class="data-row grey-bg">
+            <td class="col-3" data-l10n-id="sensor_hum">Humidity</td>
+            <td class="col-2">
+                79,0 %
+            </td>
+            <td class="col-2">
+                80,0 %
+                 | 14:17
+            </td>
+            <td class="col-2">
+                58,0 %
+                 | 03:05
+            </td>
+        </tr>
+        <tr class="divider">
+            <td colspan="4">
+                <div></div>
+            </td>
+        </tr>
+        
+        
+        <tr class="data-row">
+            <td class="col-3" data-l10n-id="sensor_temp_heat">Heat Index</td>
+            <td class="col-2">
+                14,5 °C
+            </td>
+            <td class="col-2">
+                15,6 °C
+                 | 11:48
+            </td>
+            <td class="col-2">
+            </td>
+        </tr>
+        
+         
+        <tr class="data-row grey-bg">
+            <td class="col-3" data-l10n-id="thw_index">THW Index</td>
+            <td class="col-2">
+                14,5 °C
+            </td>
+            <td class="col-2">
+            </td>
+            <td class="col-2">
+            </td>
+        </tr>
+        
+        
+        <tr class="data-row">
+            <td class="col-3" data-l10n-id="sensor_temp_chill">Wind Chill</td>
+            <td class="col-2">
+                14,7 °C
+            </td>
+            <td class="col-2">
+            </td>
+            <td class="col-2">
+                7,2 °C
+                 | 05:32
+            </td>
+        </tr>
+        
+        
+        <tr class="data-row grey-bg">
+            <td class="col-3" data-l10n-id="sensor_temp_dew">Dew Point</td>
+            <td class="col-2">
+                11,1 °C
+            </td>
+            <td class="col-2">
+                11,1 °C
+                 | 13:10
+            </td>
+            <td class="col-2">
+                4,4 °C
+                 | 02:43
+            </td>
+        </tr>
+        
+        
+        <tr class="data-row">
+            <td class="col-3" data-l10n-id="sensor_wet_bulb">Wet Bulb</td>
+            <td class="col-2">
+                12,6 °C
+            </td>
+            <td class="col-2">
+            </td>
+            <td class="col-2">
+                8,1 °C
+                 | 07:45
+            </td>
+        </tr>
+        <tr class="divider">
+            <td colspan="4">
+                <div></div>
+            </td>
+        </tr>
+        
+        
+        <tr class="data-row grey-bg">
+            <td class="col-3" data-l10n-id="sensor_barometer">Barometer</td>
+            <td class="col-2">
+                1004,5 hPa
+            </td>
+            <td class="col-2">
+                1004.6 hPa
+                 | 14:08
+            </td>
+            <td class="col-2">
+                1000.8 hPa
+                 | 05:20
+            </td>
+        </tr>
+        
+        
+        <tr class="data-row">
+            <td class="col-3" data-l10n-id="sensor_bar_trend">Bar Trend</td>
+            <td class="col-2">
+                Rising Slowly
+            </td>
+            <td class="col-2">
+            </td>
+            <td class="col-2">
+            </td>
+        </tr>
+        <tr class="divider">
+            <td colspan="4">
+                <div></div>
+            </td>
+        </tr>
+        
+        
+        <tr class="data-row grey-bg">
+            <td class="col-3" data-l10n-id="sensor_solar_rad">Solar Radiation</td>
+            <td class="col-2">
+                --
+            </td>
+            <td class="col-2">
+                0 
+                 | 19:12
+            </td>
+            <td class="col-2">
+            </td>
+        </tr>
+        
+        
+        <tr class="data-row">
+            <td class="col-3" data-l10n-id="sensor_uv_rad">UV Radiation</td>
+            <td class="col-2">
+                --
+            </td>
+            <td class="col-2">
+                0 
+                 | 19:12
+            </td>
+            <td class="col-2">
+            </td>
+        </tr>
+        
+        
+        <tr class="divider">
+            <td colspan="4">
+                <div></div>
+            </td>
+        </tr>
+        
+        
+        <tr class="data-row grey-bg">
+            <td class="col-3" data-l10n-id="sensor_wind_speed">Wind Speed</td>
+            <td class="col-2">
+                
+                    3,5 knots
+                
+            </td>
+            <td class="col-2">
+                19,1 knots
+                
+                     | 0:42
+                
+            </td>
+            <td class="col-2">
+            </td>
+        </tr>
+        <tr class="data-row">
+            <td class="col-3" data-l10n-id="sensor_wind_direction">Wind Direction</td>
+            
+                <td class="col-2">
+                    
+                        SW
+                    
+                        214
+                    
+                        °
+                    
+                </td>
+            
+            <td class="col-2">
+                
+                    --
+                
+                    
+                
+                °
+                
+            </td>
+            <td class="col-2">
+            </td>
+        </tr>
+        <tr class="spacer"></tr>
+        
+        </tbody>
+    </table>
+</div>
+
+<table>
+    <tbody>
+    
+    <tr class="section-header-tr">
+        
+        <td class="col-3">
+            <span class="triangle-wind triangle-top" data-l10n-id="wind">Wind</span>
+        </td>
+        <td class="col-2" data-l10n-id="two_minute">2 Minute</td>
+        <td class="col-2" data-l10n-id="ten_minute">10 Minute</td>
+        <td class="col-2" style="position: relative;">
+            
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div class="wind-block" style="display:  block ">
+    <table>
+        <tbody>
+        <tr class="spacer"></tr>
+        <tr class="data-row grey-bg">
+            <td class="col-3" data-l10n-id="sensor_wind_avg_spd">Avg Wind Speed</td>
+            <td class="col-2">2,8 knots</td>
+            <td class="col-2">2,6 knots</td>
+            <td class="col-2">
+            </td>
+        </tr>
+        <tr class="data-row">
+            <td class="col-3" data-l10n-id="sensor_wind_gst_spd">Wind Gust Speed</td>
+            <td class="col-2">--</td>
+            <td class="col-2">3,5 knots</td>
+            <td class="col-2">
+            </td>
+        </tr>
+        <tr class="spacer"></tr>
+        </tbody>
+    </table>
+</div>
+<table>
+    <tbody>
+    <tr>
+        <td style="display: none;"></td>
+        <td colspan="6" style="padding-left: 0">
+            <table>
+                <tbody>
+                
+                <tr class="section-header-tr">
+                    
+                    <td class="fixed-width">
+                        <span class="triangle-rain triangle-top" data-l10n-id="rain">Rain</span>
+                    </td>
+                    <td class="col-1" data-l10n-id="rate">Rate</td>
+                    <td class="col-1" data-l10n-id="hour" style="text-transform: capitalize">hour</td>
+                    <td class="col-1" data-l10n-id="Day">Day</td>
+                    <td class="col-1" data-l10n-id="Month">Month</td>
+                    <td class="col-1" data-l10n-id="Year">Year</td>
+                    <td class="col-1" style="position: relative;">
+                        <span data-l10n-id="storm">Storm</span>
+                        
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div class="rain-block" style="display:  block ">
+    <table>
+        <tbody>
+        <tr class="spacer"></tr>
+        <tr class="data-row grey-bg">
+            <td class="fixed-width" data-l10n-id="rain">Rain</td>
+            <td class="col-1">0,0 mm/h</td>
+            <td class="col-1">0,0 mm</td>
+            <td class="col-1">0,0 mm</td>
+            <td class="col-1">131,2 mm</td>
+            <td class="col-1">288,0 mm</td>
+            <td class="col-1">0,0 mm</td>
+        </tr>
+        
+        <tr class="data-row">
+            <td class="fixed-width" data-l10n-id="sensor_et">ET</td>
+            <td class="col-1">&nbsp;</td>
+            <td class="col-1">&nbsp;</td>
+            <td class="col-1">0,00 mm</td>
+            <td class="col-1">25,40 mm</td>
+            <td class="col-1">45,21 mm</td>
+            <td class="col-1">&nbsp;</td>
+        </tr>
+        
+        <tr class="spacer"></tr>
+        </tbody>
+    </table>
+</div>
+</div></div>
+        <div id="extraSensors"><div></div></div>
+    </div>
+    <div class="summary-embeddable-page-footer">
+        <div class="davis-logo">
+            <img src="/static/images/email/commons/davis_logo.png" alt="">
+        </div>
+        <div class="wl-network" data-l10n-id="wl_network">Weatherlink Network</div>
+        <div class="pull-right">
+            
+            <div class="">
+                Vantage Pro2, Cabled via Vantage Connect
+            </div>
+            
+            <div id="aqIndex" style="display: none;">
+                
+                    Air Quality Index: United States EPA
+                
+            </div>
+            <div class="">
+                <span data-l10n-id="weather_stations_shop">Shop Weather Stations at</span>
+                <span><a class="websiteUrl" target="_blank" href="http://www.davisinstruments.com">www.davisinstruments.com</a></span>
+            </div>
+        </div>
+    </div>
+</div></div></div>
+<script src="/js/10.0.2.7-5e03c50c/vendor/l20n/polyfills/browser.js"></script>
+<script src="/js/10.0.2.7-5e03c50c/vendor/l20n/polyfills/Template.js"></script>
+<script src="/js/10.0.2.7-5e03c50c/vendor/l20n/l20n.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.7.0/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+</script>
+<script src="/js/10.0.2.7-5e03c50c/vendor/jquery/packery.pkgd-1.2.2.js"></script>
+<script src="/js/10.0.2.7-5e03c50c/vendor/jquery/jquery.maskedinput.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.wreqr/1.3.3/backbone.wreqr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.babysitter/0.1.8/backbone.babysitter.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.marionette/2.4.1/backbone.marionette.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/accounting.js/0.4.1/accounting.min.js"></script>
+<script src="/js/10.0.2.7-5e03c50c/vendor/davis/utils.js"></script>
+<script type="text/javascript" src="/js/10.0.2.7-5e03c50c/vendor/davis/utils.js"></script>
+
+<script type="text/javascript">
+     var wl = wl || {};
+        wl._deviceId = "001D0AF19FE9";
+        wl._deviceUrlToken = "40418f4a30ea47eeb5d4393f7b440215";
+        wl._systemName = "Saint-Raphaël - Le Lion de Mer";
+        wl._sIanaTimeZoneId = "Europe/Paris";
+        wl._gatewayType = "VC";
+        wl._sensorType = "Vantage Pro2, Cabled";
+        wl._size = "summary";
+
+     wl.__bootstrap_availableSchemes = [{"aqiLabel":"NowCast AQI","aqiLabelShort":null,"saqShortName":"USA","saqLongName":"United States EPA","isortOrder":1,"slongDescriptiveText":"<p>The United States Environmental Protection Agency (EPA) has developed an Air Quality Index (AQI) that is used to report air quality. This AQI is divided into six categories indicating increasing levels of health concern: Good, Moderate, Unhealthy for Sensitive Groups (USG), Unhealthy, Very Unhealthy, and Hazardous.</p>\n<p>The EPA has established National Ambient Air Quality Standards (NAAQS) in order to protect public health. An AQI value of 100 generally corresponds to the level of the NAAQS for the pollutant. The Clean Air Act (USA) (1990) requires the EPA to review its National Ambient Air Quality Standards every five years to reflect evolving health effects information. The Air Quality Index is adjusted periodically to reflect these changes.</p><p>Real-time monitoring data are typically available as 1-hour averages. However, computation of the AQI for some pollutants requires averaging over multiple hours of data. (For example, calculation of the PM 2.5 AQI requires a 24-hour average.) To accurately reflect the current air quality, the multi-hour average used for the AQI computation should be centered on the current time, but as concentrations of future hours are unknown and are difficult to estimate accurately, the EPA uses surrogate concentrations to estimate these multi-hour averages. This surrogate concentration is called the NowCast. Nowcast is a particular type of exponentially weighted moving average that provides more weight to the most recent air quality data when air pollution levels are changing. The Air Quality Index itself is a piecewise linear function of the input pollutant concentration.</p>","inumberOfHighPrecisionFractionalDigits":1,"inumberOfLowPrecisionFractionalDigits":0,"iaqSchemeId":1},{"aqiLabel":"3 Hr AQI","aqiLabelShort":null,"saqShortName":"Canada","saqLongName":"Canada Health","isortOrder":2,"slongDescriptiveText":"<p>Canada's Air Quality Health Index (AQHI) is a federal program jointly coordinated by Health Canada and Environment Canada. The AQHI provides a 10 point scale to indicate the level of health risk associated with local air quality. Occasionally, when the amount of air pollution is abnormally high, the number may exceed 10. The index describes the level of health risk associated with this number as Low, Moderate, High, or Very High.</p><p>Air quality in Canada has historically been reported by the US EPA AQI in various provinces, but the US AQI was designed around achieving lower pollutant emission rates rather than human health. The Canada AQHI was created to report on the specific health risks posed by air pollution. The AQHI is aimed towards two populations: 1. The “general” population and 2. The “at-risk” populations. The latter consists of children, the elderly and people with existing respiratory or cardiovascular conditions, such as those with asthma, and people suffering from diabetes, heart disease or lung disease. The AQHI does not measure the effects of odor, pollen, dust, heat, or humidity.</p><p>The index is based on a 3 hour average PM 2.5 concentration. The formula is exponential and is designed so that the most frequently observed concentrations result in a value of 3 to 4 on the scale, and less than 10% of the highest observed concentrations result in a value of 7 or higher on a 10-point scale.</p>","inumberOfHighPrecisionFractionalDigits":2,"inumberOfLowPrecisionFractionalDigits":1,"iaqSchemeId":8},{"aqiLabel":"1 Hr AQI","aqiLabelShort":null,"saqShortName":"EU Common","saqLongName":"EU EEA Common","isortOrder":3,"slongDescriptiveText":"<p>The European Union (EU)'s European Environment Agency (EEA) developed the Common Air Quality Index (CAQI). The CAQI is a number on a scale from 1 to 100, where a low value means good air quality and a high value means bad air quality. The index is subdivided into five CAQI ranges and verbal descriptions: Very Low, Low, Medium, High, and Very High.</p><p>The CAQI is based upon a large set of pollutant data that can be easily transformed into an index that is easy to communicate to the general public. The main aim of the CAQI was to have an index that would encourage wide comparison across the EU and to attract public attention to urban air pollution and help decrease exposure.</p><p>The index is based on a one hour average PM 2.5 concentration.</p>","inumberOfHighPrecisionFractionalDigits":1,"inumberOfLowPrecisionFractionalDigits":0,"iaqSchemeId":2},{"aqiLabel":"NowCast AQI","aqiLabelShort":null,"saqShortName":"EU European","saqLongName":"EU European","isortOrder":4,"slongDescriptiveText":"<p>In November 2017, the European Union (EU)\\'s European Environment Agency (EEA) announced the European Air Quality Index (EAQI) and encouraged its widespread use. The EAQI does not employ an index scale, but simply assigns the pollutant concentration a \"rating\" with verbal descriptions: Good, Fair, Moderate, Poor, Very Poor, and Extremely Poor.</p><p>The PM 2.5 concentration is typically averaged over a 24 hour period, but Davis Instruments also provides the US EPA NowCast averaged concentration.</p>","inumberOfHighPrecisionFractionalDigits":1,"inumberOfLowPrecisionFractionalDigits":0,"iaqSchemeId":10},{"aqiLabel":"NowCast AQI","aqiLabelShort":null,"saqShortName":"United Kingdom","saqLongName":"UK COMEAP Daily","isortOrder":5,"slongDescriptiveText":"<p>The most commonly used air quality index in the UK is the Daily Air Quality Index (AQI) recommended by the Committee on Medical Effects of Air Pollutants (COMEAP). This index has a ten point scale, which is further grouped into four bands: Low, Moderate, High, and Very High.</p><p>COMEAP designed an index based upon the requirements of the general public, in particular, those more at risk (those with lung or heart conditions, the elderly, and children) of adverse health effects from air pollution. The AQI was designed to be used to draw attention to the day-by-day, month-by-month variations in air pollutant concentrations and so contribute to education and awareness of air quality issues amongst the public and policy-makers.</p><p>The PM 2.5 concentration is typically averaged over a 24 hour period, but Davis Instruments also provides the AQI based on the US EPA NowCast averaged concentration. \"Triggers\" or breakpoints were derived to provide information to the public to warn of exposure as it is taking place at Moderate, High or Very High levels. The Air Quality Index itself is a piecewise linear function of the input pollutant concentration.</p>","inumberOfHighPrecisionFractionalDigits":2,"inumberOfLowPrecisionFractionalDigits":1,"iaqSchemeId":3},{"aqiLabel":"NowCast AQI","aqiLabelShort":null,"saqShortName":"Australia","saqLongName":"Australia NEPM","isortOrder":6,"slongDescriptiveText":"<p>Across Australia, each of the states and territories, the National Environmental Protection Measure (NEPM) is used to determine the standards and objectives around the air pollution monitoring. The Air Quality Index (AQI) is broken into six categories.</p><p>The AQI is designed to set standards that consist of quantifiable characteristics of the air against which ambient air quality can be assessed. The desired environmental outcome of this Measure is ambient air quality that allows for the adequate protection of human health and well-being.</p><p>The PM 2.5 concentration is typically averaged over a 24 hour period, but Davis Instruments also provides the AQI based on the US EPA NowCast averaged concentration. A consistent approach is taken with air quality indices, using a simple linear scale where 100 represents the concentration standard for each pollutant. The daily concentration standard for PM 2.5 in Australia is 25 ug/m^3. As such, the index is calculated to be exactly four times the concentration.</p>","inumberOfHighPrecisionFractionalDigits":1,"inumberOfLowPrecisionFractionalDigits":0,"iaqSchemeId":7},{"aqiLabel":"NowCast AQI","aqiLabelShort":null,"saqShortName":"India","saqLongName":"India CPCB National","isortOrder":7,"slongDescriptiveText":"<p>The National Air Quality Index (AQI) was launched in India in 2014. The Central Pollution Control Board along with State Pollution Control Boards (SPCB) have been operating the National Air Monitoring Program (NAMP). There are six AQI categories: Good, Satisfactory, Moderately Polluted, Poor, Very Poor, and Severe.</p><p>An expert group comprising medical professionals, air quality experts, academia, advocacy groups, and SPCB's was constituted and a technical study was awarded to the Indian Institute of Technology (IIT) Kanpur. IIT Kanpur and the Expert Group recommended the AQI scheme that is in use today.</p><p>Based on the measured ambient concentrations, corresponding standards and likely health impact, an index is calculated. The PM 2.5 concentration is typically averaged over a 24 hour period, but Davis Instruments also provides the AQI based on the US EPA NowCast averaged concentration. The Air Quality Index itself is a piecewise linear function of the input pollutant concentration.</p>","inumberOfHighPrecisionFractionalDigits":1,"inumberOfLowPrecisionFractionalDigits":0,"iaqSchemeId":4},{"aqiLabel":"NowCast AQI","aqiLabelShort":null,"saqShortName":"China","saqLongName":"China MEP","isortOrder":8,"slongDescriptiveText":"<p>China's Ministry of Ecology and Environment, formerly the Ministry of Environmental Protection (MEP) is responsible for measuring the level of air pollution in China. There are six Air Quality Index (AQI) categories: Excellent, Good, Lightly Polluted, Moderately Polluted, Heavily Polluted, and Severely Polluted.</p><p>The AQI \"score\" is non-linear. Thus an AQI of 300 does not mean twice the pollution of AQI at 150, nor does it mean the air is twice as harmful. While an AQI of 50 from day 1 to 182 and AQI of 100 from day 183 to 365 does provide an annual average of 75, it does not mean the pollution is acceptable even if the benchmark of 100 is deemed safe. Because the benchmark is a 24-hour target, and the annual average must match the annual target, it is entirely possible to have safe air every day of the year but still fail the annual pollution benchmark.</p><p>The AQI value can be calculated either per hour or per 24 hours. Davis Instruments also provides the AQI based on the US EPA NowCast averaged concentration. The IAQI of each pollutant is calculated according to a formula published by the MEP, which is a piecewise linear function of the input pollutant concentration.</p>","inumberOfHighPrecisionFractionalDigits":1,"inumberOfLowPrecisionFractionalDigits":0,"iaqSchemeId":5},{"aqiLabel":"NowCast AQI","aqiLabelShort":null,"saqShortName":"Mexico","saqLongName":"Mexico IMECA","isortOrder":9,"slongDescriptiveText":"<p>The Índice Metropolitano de la Calidad del Aire or IMECA, in English meaning the Metropolitan Index of Air Quality, is the reference value system for the levels of air pollution in the Mexico City Metropolitan Area, within the Valley of Mexico. To report the quality of the air, the IMECA uses 5 index categories, which in English roughly translate to these category names: Good, Moderate, Poor, Very Poor, and Extremely Poor.</p><p>IMECA was established for the inhabitants of Mexico City and the Greater Mexico City area to know the real-time levels of air pollution in their urban environment. IMECA values establish limits to protect the health of the population.</p><p>The IMECA is published every hour for the population of the Metropolitan Zone of the Valley of Mexico, which covers the entire Federal District and the metropolitan area of the State of Mexico. Davis Instruments also provides the IMECA based on the US EPA NowCast averaged concentration. The index in IMECA is calculated based upon a different linear algorithms for each of the 5 index categories, each of which has a progressively shallower slope from the the Good to Very Poor category. The Poor category is set to the value of the Official Mexican Air Quality Standard concentration value for PM 2.5.</p>","inumberOfHighPrecisionFractionalDigits":1,"inumberOfLowPrecisionFractionalDigits":0,"iaqSchemeId":9},{"aqiLabel":"1 Hr AQI","aqiLabelShort":null,"saqShortName":"Japan","saqLongName":"Japan MOE","isortOrder":10,"slongDescriptiveText":"<p>The Ministry of Environment (MOE) of the Government of Japan uses the an Air-quality Index (AQI) to describe the ambient air quality based on the health risks of air pollution. The MOE does not employ an index scale, but simply assigns the pollutant concentration to a risk level color band. The color bands are divided into six categories.</p><p>The MOE doesn't provide names for each risk level color band. Davis Instruments uses a slight modification of the AIRKOREA naming scheme to provide useful names. The standards employed in South Korea generally follow the same standards set in Japan. There is no public documentation that confirms the averaging period used in the air quality concentration measurements, but it is considered likely that these are based on on a one hour average PM 2.5 concentration given the air quality standard thresholds set by other industrialized countries.</p>","inumberOfHighPrecisionFractionalDigits":1,"inumberOfLowPrecisionFractionalDigits":0,"iaqSchemeId":11},{"aqiLabel":"NowCast AQI","aqiLabelShort":null,"saqShortName":"South Korea","saqLongName":"AIRKOREA MOE Common","isortOrder":11,"slongDescriptiveText":"<p>The Ministry of Environment (MOE) of South Korea uses the Comprehensive Air-quality Index (CAI) to describe the ambient air quality based on the health risks of air pollution. The index aims to help the public easily understand the air quality and protect people's health. The CAI which is divided into six categories. The higher the CAI value, the greater the level of air pollution.</p><p>The increasing public interest in air pollution and a clean and safe environment has led to raising the need for air quality information across the country. A website, named AIRKOREA, was launched in 2005 to provide air pollution information to the public.</p><p>Davis Instruments provides the AQI based on the US EPA NowCast averaged concentration. The CAI is on a scale from 0 to 500 and is a piecewise linear function of the input pollutant concentration for each main category. Any concentration value above the Good category exceeds the daily concentration standard.</p>","inumberOfHighPrecisionFractionalDigits":1,"inumberOfLowPrecisionFractionalDigits":0,"iaqSchemeId":6},{"aqiLabel":"1 Hr AQI","aqiLabelShort":null,"saqShortName":"Singapore","saqLongName":"Singapore PSI","isortOrder":12,"slongDescriptiveText":"<p>The National Environment Agency (NEA) is the leading public organisation responsible for ensuring a clean and sustainable environment for Singapore. It computes an Air Quality Index that it calls the Pollutants Standards Index (PSI), which is a number used to indicate the level of pollutants in air. The PSI is reported as a number on a scale of 0 to 500. The index figures enable the public to determine whether the air pollution levels in a particular location are good, unhealthy, hazardous or worse.</p>","inumberOfHighPrecisionFractionalDigits":1,"inumberOfLowPrecisionFractionalDigits":0,"iaqSchemeId":12},{"aqiLabel":"1 Hr AQI","aqiLabelShort":null,"saqShortName":"Colombia","saqLongName":"Colombia MADS","isortOrder":13,"slongDescriptiveText":"<p>The Air Quality Index (ICA) allows comparing the levels of air pollution of the monitoring stations that make up an Air Quality Surveillance System. The Air Quality Index has been adopted based on the technical recommendations contained in the Technical Assistance Document for the Reporting of Daily Air Quality. This ICA is divided into six categories indicating increasing levels of health concern: Good, Moderate, Unhealthy for Sensitive Groups, Unhealthy, Very Unhealthy, and Hazardous.</p>","inumberOfHighPrecisionFractionalDigits":1,"inumberOfLowPrecisionFractionalDigits":0,"iaqSchemeId":13}];
+    
+	$(document).ready(function() {
+        wl._userAccountSettings = {"userId":458172,"lastViewedSystemId":139527,"lastPublicViewedSystemId":152475,"formatDecimalType":"High","localTimezoneOffset":3600000,"ianaTimeZone":"Europe/Paris","airQualitySchemeId":1,"unitsWaterDepthTypeId":1,"localTimezoneOffsetSeconds":3600,"unitsBarTypeId":4,"unitsWindTypeId":2,"formatDateMDY":false,"formatDecimalTypeId":2,"unitsWeightTypeId":3,"unitsRainEtTypeId":2,"unitsSoilMoistureTypeId":2,"unitsSoilDepthTypeId":1,"timespanTypeId":4,"formatDateTypeId":2,"formatTimeTypeId":2,"formatNumberTypeId":2,"formatTime12hrs":false,"unitsFlowTypeId":3,"unitsPressureTypeId":2,"unitsFlowRateTypeId":1,"unitsTempTypeId":2,"unitsElevTypeId":2,"lang":"en"};
+        wl.app.addInitializer(function(options) {
+           wl.app.renderUtils = new Utils.RenderUtils(wl._userAccountSettings);
+        });
+    });
+</script>
+    <script type="text/javascript" src="/js/10.0.2.7-5e03c50c/embeddable/embeddableModels.js"></script>
+    <script type="text/javascript" src="/js/10.0.2.7-5e03c50c/embeddable/embeddable-compiled.js"></script>
+    <script type="text/javascript" src="/js/10.0.2.7-5e03c50c/embeddable/embeddablePage.js"></script>
+
+</body></html>

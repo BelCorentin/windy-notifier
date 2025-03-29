@@ -1,0 +1,69 @@
+2025-03-29 13:31:50,529 - INFO - Successfully imported main module
+2025-03-29 13:31:50,529 - INFO - Starting Windy Notifier
+2025-03-29 13:31:50,529 - INFO - Will check for winds exceeding 15 knots every 30 minutes
+2025-03-29 13:31:50,529 - INFO - Notification method: email
+2025-03-29 13:31:50,529 - INFO - Checking wind speed...
+2025-03-29 13:31:50,529 - INFO - Accessing https://www.weatherlink.com/embeddablePage/show/d8f389c51427467eb5c4f266caaf78a9/summary with Selenium
+2025-03-29 13:31:50,743 - INFO - Chrome driver initialized
+2025-03-29 13:31:53,522 - INFO - URL loaded
+2025-03-29 13:31:53,540 - INFO - Body tag found, page has loaded
+2025-03-29 13:32:01,622 - INFO - Found wind_speed: 3,5 knots
+2025-03-29 13:32:01,673 - INFO - Found wind direction: WSW 238 °
+2025-03-29 13:32:01,682 - INFO - Found temperature: 14,4 °C
+2025-03-29 13:32:01,682 - INFO - Direct targeting failed, using BeautifulSoup fallback
+2025-03-29 13:32:01,693 - INFO - Extracted gust_speed from text: 3,5 knots
+2025-03-29 13:32:01,751 - INFO - Selenium driver closed
+2025-03-29 13:32:01,751 - INFO - Weather data: {'wind_speed': '3,5 knots', 'wind_direction': 'WSW 238 °', 'temperature': '14,4 °C', 'gust_speed': '3,5 knots'}
+2025-03-29 13:32:01,752 - INFO - Wind speed: 3.5 knots (3.50 knots)
+2025-03-29 13:32:01,752 - INFO - Wind gust: 3.5 knots (3.50 knots)
+2025-03-29 13:32:01,752 - INFO - Wind conditions: Hurricane force (Beaufort 12)
+2025-03-29 13:32:01,752 - INFO - Wind speed (3.5 knots) is below threshold (15 knots)
+2025-03-29 14:02:02,640 - INFO - Checking wind speed...
+2025-03-29 14:02:02,640 - INFO - Accessing https://www.weatherlink.com/embeddablePage/show/d8f389c51427467eb5c4f266caaf78a9/summary with Selenium
+2025-03-29 14:02:04,305 - INFO - Chrome driver initialized
+2025-03-29 14:02:05,712 - INFO - URL loaded
+2025-03-29 14:02:05,720 - INFO - Body tag found, page has loaded
+2025-03-29 14:02:13,798 - INFO - Found wind_speed: 1,7 knots
+2025-03-29 14:02:13,845 - INFO - Found wind direction: WNW 292 °
+2025-03-29 14:02:13,854 - INFO - Found temperature: 14,5 °C
+2025-03-29 14:02:13,854 - INFO - Direct targeting failed, using BeautifulSoup fallback
+2025-03-29 14:02:13,864 - INFO - Extracted gust_speed from text: 1,7 knots
+2025-03-29 14:02:13,920 - INFO - Selenium driver closed
+2025-03-29 14:02:13,920 - INFO - Weather data: {'wind_speed': '1,7 knots', 'wind_direction': 'WNW 292 °', 'temperature': '14,5 °C', 'gust_speed': '1,7 knots'}
+2025-03-29 14:02:13,920 - INFO - Wind speed: 1.7 knots (1.70 knots)
+2025-03-29 14:02:13,920 - INFO - Wind gust: 1.7 knots (1.70 knots)
+2025-03-29 14:02:13,920 - INFO - Wind conditions: Light air (Beaufort 1)
+2025-03-29 14:02:13,920 - INFO - Wind speed (1.7 knots) is below threshold (15 knots)
+2025-03-29 14:32:14,787 - INFO - Checking wind speed...
+2025-03-29 14:32:14,787 - INFO - Accessing https://www.weatherlink.com/embeddablePage/show/d8f389c51427467eb5c4f266caaf78a9/summary with Selenium
+2025-03-29 14:32:14,991 - INFO - Chrome driver initialized
+2025-03-29 14:32:16,458 - INFO - URL loaded
+2025-03-29 14:32:16,476 - INFO - Body tag found, page has loaded
+2025-03-29 14:32:24,557 - INFO - Found wind_speed: 3,5 knots
+2025-03-29 14:32:24,603 - INFO - Found wind direction: W 263 °
+2025-03-29 14:32:24,611 - INFO - Found temperature: 14,6 °C
+2025-03-29 14:32:24,611 - INFO - Direct targeting failed, using BeautifulSoup fallback
+2025-03-29 14:32:24,620 - INFO - Extracted gust_speed from text: 3,5 knots
+2025-03-29 14:32:24,677 - INFO - Selenium driver closed
+2025-03-29 14:32:24,677 - INFO - Weather data: {'wind_speed': '3,5 knots', 'wind_direction': 'W 263 °', 'temperature': '14,6 °C', 'gust_speed': '3,5 knots'}
+2025-03-29 14:32:24,677 - INFO - Wind speed: 3.5 knots (3.50 knots)
+2025-03-29 14:32:24,677 - INFO - Wind gust: 3.5 knots (3.50 knots)
+2025-03-29 14:32:24,677 - INFO - Wind conditions: Hurricane force (Beaufort 12)
+2025-03-29 14:32:24,677 - INFO - Wind speed (3.5 knots) is below threshold (15 knots)
+2025-03-29 15:02:25,601 - INFO - Checking wind speed...
+2025-03-29 15:02:25,602 - INFO - Accessing https://www.weatherlink.com/embeddablePage/show/d8f389c51427467eb5c4f266caaf78a9/summary with Selenium
+2025-03-29 15:02:27,212 - INFO - Chrome driver initialized
+2025-03-29 15:02:28,616 - INFO - URL loaded
+2025-03-29 15:02:28,633 - INFO - Body tag found, page has loaded
+2025-03-29 15:02:36,723 - INFO - Found wind_speed: 3,5 knots
+2025-03-29 15:02:36,774 - INFO - Found wind direction: SW 214 °
+2025-03-29 15:02:36,783 - INFO - Found temperature: 14,7 °C
+2025-03-29 15:02:36,783 - INFO - Direct targeting failed, using BeautifulSoup fallback
+2025-03-29 15:02:36,793 - INFO - Extracted gust_speed from text: 3,5 knots
+2025-03-29 15:02:36,849 - INFO - Selenium driver closed
+2025-03-29 15:02:36,849 - INFO - Weather data: {'wind_speed': '3,5 knots', 'wind_direction': 'SW 214 °', 'temperature': '14,7 °C', 'gust_speed': '3,5 knots'}
+2025-03-29 15:02:36,849 - INFO - Wind speed: 3.5 knots (3.50 knots)
+2025-03-29 15:02:36,849 - INFO - Wind gust: 3.5 knots (3.50 knots)
+2025-03-29 15:02:36,849 - INFO - Wind conditions: Hurricane force (Beaufort 12)
+2025-03-29 15:02:36,850 - INFO - Wind speed (3.5 knots) is below threshold (15 knots)
+2025-03-29 15:02:49,187 - INFO - Windy Notifier stopped by user

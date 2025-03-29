@@ -1,0 +1,10 @@
+{
+  "timestamp": 1743256956.8500555,
+  "datetime": "2025-03-29 15:02:36",
+  "wind_speed": 3.5,
+  "wind_gust": 3.5,
+  "wind_description": "Hurricane force",
+  "beaufort_scale": 12,
+  "threshold": 15,
+  "above_threshold": false
+}
